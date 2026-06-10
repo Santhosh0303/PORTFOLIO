@@ -1,0 +1,35 @@
+{
+  "name": "saisanthosh-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "qa:cost": "node scripts/check-cost-risk.mjs",
+    "qa:content": "node scripts/check-content-integrity.mjs",
+    "qa:links": "node scripts/check-links.mjs",
+    "qa:proof": "node scripts/check-proof-artifacts.mjs",
+    "qa:security": "node scripts/check-security.mjs",
+    "qa:no-backend": "node scripts/check-no-backend.mjs",
+    "qa:labels": "node scripts/check-data-labels.mjs",
+    "qa:authenticity": "node scripts/check-authenticity-regression.mjs",
+    "qa": "npm run qa:cost && npm run qa:content && npm run qa:links && npm run qa:proof && npm run qa:security && npm run qa:no-backend && npm run qa:labels && npm run qa:authenticity",
+    "deploy:check": "npm run qa && npm run build"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "framer-motion": "^11.15.0",
+    "lucide-react": "^0.468.0",
+    "recharts": "^2.15.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "@tailwindcss/vite": "^4.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3"
+  }
+}

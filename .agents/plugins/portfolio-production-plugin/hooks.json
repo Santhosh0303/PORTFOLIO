@@ -1,0 +1,12 @@
+{
+  "pre-run": [
+    "rules/context-gateway-rule.md",
+    "rules/token-budget-rule.md"
+  ],
+  "pre-commit": [
+    "rules/external-brain-update-rule.md",
+    "rules/no-false-claims-rule.md",
+    "rules/zero-cost-rule.md",
+    "rules/security-rule.md"
+  ]
+}

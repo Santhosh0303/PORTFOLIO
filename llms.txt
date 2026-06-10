@@ -1,0 +1,39 @@
+# System Context: Evidence-Led Data Analyst & BI Builder Portfolio
+
+This is the development repository for the portfolio site.
+
+## Professional Persona
+- **Persona**: Evidence-Led Data Analyst & BI Builder
+- **Core Tagline**: Data Quality. BI Dashboards. Geospatial ML. AI Context Validation R&D.
+- **Main Promise**: I turn messy data into validated pipelines, dashboards and decisions.
+
+## Targeted Career Roles
+- **Primary UK Roles**: Junior Data Analyst, Graduate Data Analyst, BI Analyst, Power BI Analyst, Data Quality Analyst, Data Governance / Assurance Analyst, Reporting / MI Analyst.
+- **Secondary Roles**: Operations Data Analyst, Geospatial / Public Sector Analyst, AI Data / LLM Evaluation Analyst, Analytics Engineer Trainee.
+- **Excluded Leads**: Do not present as ML/MLOps Engineer, Backend Developer, AI Researcher, Cybersecurity Analyst, or Quant Analyst.
+
+## Verified Project Metrics & Labels
+
+### 1. Rural Financial Accessibility in Scotland
+- **Label**: Academic Dissertation Project
+- **Metrics**: 7,392 Scottish Data Zones; 1,226 rural ML records; 409 scenario candidates; 4 Power BI pages; Random Forest ROC-AUC 0.793; QA 71 PASS / 0 WARN / 0 FAIL.
+
+### 2. UK SME Data Quality Pipeline (AWS-REGEX)
+- **Label**: Portfolio Project
+- **Metrics**: 2,500 input records; 222 processed; 2,278 quarantined; 57 scorecard metrics; 923 tests passed; 2,963 regex rules applied.
+
+### 3. Midlands Theatre BI Data Mart
+- **Label**: MSc / Academic BI Project
+- **Metrics**: 6-table star schema; 1 fact table; 5 dimensions; 18,942 rows loaded; 6,132 fact rows; 7 foreign-key relationships.
+
+### 4. VCCF
+- **Label**: Independent R&D Project
+
+### 5. KPMG UK + British Airways Forage
+- **Label**: Virtual Simulations
+
+## Strict Public-Claims Safety Rules
+- **No False Experience**: Never claim or imply direct recruiting/employment experience at xAI, Tesla, SpaceX, Google, OpenAI, or similar.
+- **Internal Aspiration Labels**: Never publicly claim H3+ or Q20+ credentials. Use them only internally.
+- **No Free-tier SLA Claims**: Do not claim free-tier demos have enterprise-grade SLAs.
+- **Static zero-cost core**: Site must be hosted via GitHub Pages, static SPA, zero cost, no active backend servers or server databases.
