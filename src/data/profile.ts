@@ -6,9 +6,9 @@ export const profile: Profile = {
   tagline: "Data Quality. BI Dashboards. Geospatial ML. AI Context Validation R&D.",
   promise: "I turn messy data into validated pipelines, dashboards and decisions.",
   location: "Leicester, UK",
-  email: "saisanthoshbellamramesh@gmail.com",
-  linkedin: "https://www.linkedin.com/in/sai-santhosh-bellam-ramesh",
-  github: "https://github.com/saisanthosh0303",
+  email: "saisanthoshbr2003@gmail.com",
+  linkedin: "https://www.linkedin.com/in/saisanthosh0303",
+  github: "https://github.com/Santhosh0303",
   cvLinks: {
     dataAnalyst: { label: "Data Analyst CV", url: "#", isAvailable: false, plannedPlaceholder: "Planned CV download link" },
     biAnalyst: { label: "BI Analyst CV", url: "#", isAvailable: false, plannedPlaceholder: "Planned CV download link" },
@@ -20,7 +20,7 @@ export const navigationItems: NavigationItem[] = [
   { label: "Home", path: "#home" },
   { label: "Role selector", path: "#roles" },
   { label: "Projects", path: "#projects" },
-  { label: "Interactive Lab", path: "#lab" },
+  { label: "Project Walkthroughs", path: "#walkthroughs" },
   { label: "CV / Contact", path: "#contact" }
 ];
 

@@ -27,7 +27,7 @@ export default function RoleSelector() {
   const selectedRole = sortedRoles.find((role) => role.id === selectedRoleId) || sortedRoles[0];
 
   return (
-    <section id="roles" className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section id="roles" className="py-24 sm:py-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 bg-black">
       <SectionHeading 
         title="Recruiter Alignment" 
         subtitle="Select a target analyst profile to inspect fit criteria, verified project evidence, mapped tools, and download tailored CV variant guides."

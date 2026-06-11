@@ -1,52 +1,52 @@
 import React from 'react';
 import SectionHeading from '../ui/SectionHeading';
-import { Import, Search, ShieldCheck, AreaChart } from 'lucide-react';
+import { HelpCircle, ShieldCheck, Database, PenTool } from 'lucide-react';
 
 export default function WorkPrinciples() {
   const steps = [
     {
-      title: "1. Ingestion",
-      icon: <Import className="w-5 h-5 text-teal-400" />,
-      desc: "Structured data pipelines read transaction logs, CSV files, and network nodes cleanly using Parquet columnar storage."
+      title: "I question defaults.",
+      icon: <HelpCircle className="w-5 h-5 text-gold" />,
+      desc: "Every configuration, framework, and pipeline parameter is examined to ensure it aligns with security guidelines and project scope."
     },
     {
-      title: "2. Schema & PII Validation",
-      icon: <ShieldCheck className="w-5 h-5 text-emerald-400" />,
-      desc: "Strict quarantine rules filter corrupt syntax. Microsoft Presidio flags PII to preserve data privacy at the gate."
+      title: "I validate before I claim.",
+      icon: <ShieldCheck className="w-5 h-5 text-gold-light" />,
+      desc: "Authenticity and test coverage are non-negotiable. Claims are verified locally and in CI before staging code."
     },
     {
-      title: "3. ML & BI Modeling",
-      icon: <Search className="w-5 h-5 text-indigo-400" />,
-      desc: "Relational star-schema marts align transactional data, while scikit-learn models evaluate accessibility indexes."
+      title: "I care about evidence, not just layout.",
+      icon: <Database className="w-5 h-5 text-gold-dark" />,
+      desc: "Clean database marts, schema verification layers, and Parquet data pipelines hold more weight than aesthetic placeholders."
     },
     {
-      title: "4. Decision Support",
-      icon: <AreaChart className="w-5 h-5 text-purple-400" />,
-      desc: "Power BI dashboards map scenario candidates, providing planners and stakeholders with validated support."
+      title: "I redesign until it feels right and works clearly.",
+      icon: <PenTool className="w-5 h-5 text-gold" />,
+      desc: "Iterative testing, typography size audits, and responsive layout spacing are continuously polished to satisfy recruiters."
     }
   ];
 
   return (
-    <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section className="py-24 sm:py-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 bg-black">
       <SectionHeading 
-        title="Evidence-Led Workflow" 
-        subtitle="A reproducible data engineering and analytics framework designed to secure data integrity at every step."
+        title="How I Approach Things" 
+        subtitle="Thinking blocks and principles guiding my development, pipeline engineering, and data analysis work."
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
         {steps.map((step) => (
           <div 
             key={step.title}
-            className="p-5 rounded-xl border border-slate-900 bg-slate-950/40 backdrop-blur-sm space-y-4 hover:border-slate-800 transition-all shadow-md relative"
+            className="p-6 rounded-2xl border border-neutral-900 bg-neutral-950/40 backdrop-blur-sm space-y-6 hover:border-gold-muted/30 transition-all duration-300 shadow-lg gold-glow-hover"
           >
-            <div className="inline-flex p-2 rounded-lg bg-slate-900 border border-slate-800">
+            <div className="inline-flex p-3 rounded-lg bg-neutral-900 border border-neutral-800">
               {step.icon}
             </div>
-            <div className="space-y-1">
-              <h4 className="text-base font-bold text-slate-100">
+            <div className="space-y-2">
+              <h4 className="text-lg font-semibold text-neutral-100 font-sans">
                 {step.title}
               </h4>
-              <p className="text-xs text-slate-400 leading-relaxed">
+              <p className="text-sm text-neutral-400 leading-relaxed">
                 {step.desc}
               </p>
             </div>

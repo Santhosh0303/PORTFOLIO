@@ -10,14 +10,14 @@ export default function ProjectLimitationsBlock({ limitations, recruiterRelevanc
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       {/* Recruiter Relevance / Key Lessons */}
-      <div className="p-4 rounded-xl border border-slate-900 bg-slate-900/5 space-y-3">
-        <div className="flex items-center gap-2 text-slate-300">
-          <Lightbulb className="w-4 h-4 text-teal-400" />
-          <h4 className="text-xs font-bold uppercase tracking-wider">
+      <div className="p-4 rounded-xl border border-neutral-900 bg-neutral-900/10 hover:border-gold/20 transition-all duration-300 space-y-3">
+        <div className="flex items-center gap-2 text-neutral-300">
+          <Lightbulb className="w-4 h-4 text-gold" />
+          <h4 className="text-xs font-bold uppercase tracking-wider font-mono">
             Recruiter Relevance & Lessons
           </h4>
         </div>
-        <ul className="space-y-1.5 pl-5 list-disc text-slate-400 text-xs leading-relaxed">
+        <ul className="space-y-1.5 pl-5 list-disc text-neutral-400 text-xs leading-relaxed">
           {recruiterRelevance.map((rel, idx) => (
             <li key={idx}>{rel}</li>
           ))}
@@ -25,16 +25,16 @@ export default function ProjectLimitationsBlock({ limitations, recruiterRelevanc
       </div>
 
       {/* Model Limitations / Boundaries */}
-      <div className="p-4 rounded-xl border border-slate-900 bg-slate-900/5 space-y-3">
-        <div className="flex items-center gap-2 text-slate-300">
-          <AlertTriangle className="w-4 h-4 text-amber-500/80" />
-          <h4 className="text-xs font-bold uppercase tracking-wider">
+      <div className="p-4 rounded-xl border border-neutral-900 bg-neutral-900/10 hover:border-gold/20 transition-all duration-300 space-y-3">
+        <div className="flex items-center gap-2 text-neutral-300">
+          <AlertTriangle className="w-4 h-4 text-gold-dark" />
+          <h4 className="text-xs font-bold uppercase tracking-wider font-mono">
             Limitations & Technical Boundaries
           </h4>
         </div>
-        <ul className="space-y-1.5 pl-5 list-disc text-slate-400 text-xs leading-relaxed">
+        <ul className="space-y-1.5 pl-5 list-disc text-neutral-400 text-xs leading-relaxed">
           {limitations.map((lim, idx) => (
-            <li key={idx} className="marker:text-amber-500/50">{lim}</li>
+            <li key={idx} className="marker:text-gold-muted">{lim}</li>
           ))}
         </ul>
       </div>

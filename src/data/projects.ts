@@ -44,7 +44,7 @@ export const projects: Project[] = [
     tools: ["Python", "SQL", "Power BI", "GeoPandas", "scikit-learn"],
     roles: ["Data Analyst", "BI Analyst", "Geospatial / Public Sector Analyst", "Junior Data Scientist"],
     links: {
-      github: { label: "Repository", url: "https://github.com/saisanthosh0303/rural-finance-scotland", isAvailable: false, plannedPlaceholder: "Planned repository path" },
+      github: { label: "Repository", url: "https://github.com/Santhosh0303/rural-finance-scotland", isAvailable: false, plannedPlaceholder: "Planned repository path" },
       video: { label: "Walkthrough", url: "#", isAvailable: false, plannedPlaceholder: "Walkthrough coming soon" }
     }
   },
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     tools: ["Python", "pytest", "Pydantic", "Pandas", "Regex"],
     roles: ["Data Analyst", "Data Quality Analyst", "Data Governance / Assurance Analyst"],
     links: {
-      github: { label: "Repository", url: "https://github.com/saisanthosh0303/sme-quality-pipeline", isAvailable: false, plannedPlaceholder: "Planned repository path" }
+      github: { label: "Repository", url: "https://github.com/Santhosh0303/sme-quality-pipeline", isAvailable: false, plannedPlaceholder: "Planned repository path" }
     }
   },
   {
@@ -134,7 +134,7 @@ export const projects: Project[] = [
     tools: ["SQL", "Power BI", "Excel", "Star Schema"],
     roles: ["Data Analyst", "BI Analyst", "Reporting / MI Analyst", "Analytics Engineer Trainee"],
     links: {
-      github: { label: "Repository", url: "https://github.com/saisanthosh0303/theatre-bi-data-mart", isAvailable: false, plannedPlaceholder: "Planned repository path" }
+      github: { label: "Repository", url: "https://github.com/Santhosh0303/theatre-bi-data-mart", isAvailable: false, plannedPlaceholder: "Planned repository path" }
     }
   },
   {
@@ -175,7 +175,7 @@ export const projects: Project[] = [
     tools: ["Python", "pytest", "Microsoft Presidio", "LLM Evaluation"],
     roles: ["AI Data / LLM Evaluation Analyst", "Data Quality Analyst"],
     links: {
-      github: { label: "Repository", url: "https://github.com/saisanthosh0303/vccf-fabric", isAvailable: false, plannedPlaceholder: "Planned repository path" }
+      github: { label: "Repository", url: "https://github.com/Santhosh0303/vccf-fabric", isAvailable: false, plannedPlaceholder: "Planned repository path" }
     }
   },
   {
