@@ -17,11 +17,13 @@ export const profile: Profile = {
 };
 
 export const navigationItems: NavigationItem[] = [
-  { label: "Home", path: "#home" },
-  { label: "Role selector", path: "#roles" },
-  { label: "Projects", path: "#projects" },
-  { label: "Project Walkthroughs", path: "#walkthroughs" },
-  { label: "CV / Contact", path: "#contact" }
+  { label: "Signal", path: "#opening-signal" },
+  { label: "Origin", path: "#origin-signal" },
+  { label: "Systems", path: "#systems-built" },
+  { label: "Evidence", path: "#evidence-layer" },
+  { label: "Interactive Lab", path: "#interactive-lab" },
+  { label: "Experience", path: "#experience-snapshot" },
+  { label: "Contact", path: "#contact" }
 ];
 
 export const ctaItems: CTAItem[] = [

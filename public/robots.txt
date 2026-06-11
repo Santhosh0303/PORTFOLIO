@@ -1,0 +1,5 @@
+# robots.txt for Santhosh Bellam Portfolio
+User-agent: *
+Allow: /
+
+Sitemap: https://santhosh0303.github.io/PORTFOLIO/sitemap.xml

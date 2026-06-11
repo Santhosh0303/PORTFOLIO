@@ -2,38 +2,30 @@ import React from 'react';
 import SiteShell from './components/layout/SiteShell';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
-import HeroSection from './components/sections/HeroSection';
-import HumanRevealSection from './components/sections/HumanRevealSection';
-import InteractionMoment from './components/sections/InteractionMoment';
-import ProofMetricsStrip from './components/sections/ProofMetricsStrip';
-import FeaturedProjectsPreview from './components/sections/FeaturedProjectsPreview';
-import RoleSelector from './components/sections/RoleSelector';
-import ProjectCaseStudiesSection from './components/sections/ProjectCaseStudiesSection';
-import PauseMoment from './components/sections/PauseMoment';
-import WorkPrinciples from './components/sections/WorkPrinciples';
-import VideoPlaceholder from './components/sections/VideoPlaceholder';
+import OpeningSignal from './components/sections/OpeningSignal';
+import OriginSignal from './components/sections/OriginSignal';
+import SystemsBuilt from './components/sections/SystemsBuilt';
+import EvidenceLayer from './components/sections/EvidenceLayer';
+import InteractiveLab from './components/sections/InteractiveLab';
 import SkillsSnapshot from './components/sections/SkillsSnapshot';
-import WhyIBuild from './components/sections/WhyIBuild';
+import ExperienceSnapshot from './components/sections/ExperienceSnapshot';
+import FinalMission from './components/sections/FinalMission';
 import ContactCTA from './components/sections/ContactCTA';
 
 export default function App() {
   return (
     <SiteShell>
       <Header />
-      <main className="flex-grow bg-black">
-        {/* Cinematic Flow */}
-        <HeroSection />
-        <HumanRevealSection />
-        <InteractionMoment />
-        <ProofMetricsStrip />
-        <FeaturedProjectsPreview />
-        <RoleSelector />
-        <ProjectCaseStudiesSection />
-        <PauseMoment />
-        <WorkPrinciples />
-        <VideoPlaceholder />
+      <main id="main-content" className="flex-grow bg-[var(--bg-primary)]">
+        {/* 9 Chapters Flow */}
+        <OpeningSignal />
+        <OriginSignal />
+        <SystemsBuilt />
+        <EvidenceLayer />
+        <InteractiveLab />
         <SkillsSnapshot />
-        <WhyIBuild />
+        <ExperienceSnapshot />
+        <FinalMission />
         <ContactCTA />
       </main>
       <Footer />

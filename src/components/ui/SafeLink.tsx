@@ -32,7 +32,7 @@ export default function SafeLink({ linkObj, children, className = "" }: SafeLink
         {showTooltip && (
           <div 
             id={`tooltip-${linkObj.label.toLowerCase().replace(/\s+/g, '-')}`}
-            className="absolute z-10 bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 text-xs font-medium bg-slate-900 border border-slate-800 text-slate-300 rounded-lg shadow-xl whitespace-nowrap"
+            className="absolute z-10 bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 text-[10px] font-mono tracking-wider uppercase bg-[var(--surface)] border border-[var(--border-soft)] text-[var(--text-secondary)] rounded shadow-xl whitespace-nowrap"
             role="tooltip"
           >
             {linkObj.plannedPlaceholder || "Planned / coming soon"}
@@ -42,12 +42,13 @@ export default function SafeLink({ linkObj, children, className = "" }: SafeLink
     );
   }
 
+  const isExternal = linkObj.url.startsWith('http');
   return (
     <a
       href={linkObj.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`${className} focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 focus-visible:outline-none`}
+      target={isExternal ? "_blank" : undefined}
+      rel={isExternal ? "noopener noreferrer" : undefined}
+      className={`${className} focus-visible:ring-2 focus-visible:ring-[var(--gold-soft)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] focus-visible:outline-none`}
     >
       {children}
     </a>

@@ -1,43 +1,137 @@
 @import "tailwindcss";
 
+:root {
+  --bg-primary: #070707;
+  --bg-secondary: #101010;
+  --surface: #15120E;
+  --surface-soft: #1B1B22;
+  --gold-primary: #C8A75D;
+  --gold-muted: #8F7440;
+  --gold-soft: #E3C878;
+  --navy-deep: #071526;
+  --navy-accent: #102A43;
+  --red-accent: #7A1E1E;
+  --red-soft: #A33A2F;
+  --text-primary: #F4EFE6;
+  --text-secondary: #B8B1A5;
+  --text-muted: #7D766D;
+  --border-soft: rgba(200, 167, 93, 0.18);
+  --glow-gold: rgba(200, 167, 93, 0.22);
+}
+
 @theme {
-  --color-gold-light: #f6e09c;
-  --color-gold: #d4af37;
-  --color-gold-dark: #b89020;
-  --color-gold-muted: #8c6d1f;
-  --color-charcoal: #0d0d0d;
-  --color-charcoal-light: #161616;
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-surface: var(--surface);
+  --color-surface-soft: var(--surface-soft);
+  --color-gold-primary: var(--gold-primary);
+  --color-gold-muted: var(--gold-muted);
+  --color-gold-soft: var(--gold-soft);
+  --color-navy-deep: var(--navy-deep);
+  --color-navy-accent: var(--navy-accent);
+  --color-red-accent: var(--red-accent);
+  --color-red-soft: var(--red-soft);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-border-soft: var(--border-soft);
+  --color-glow-gold: var(--glow-gold);
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Space Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
 }
 
 @layer base {
   body {
-    @apply bg-black text-neutral-300 antialiased selection:bg-amber-500/30 selection:text-amber-200;
+    background-color: var(--bg-primary);
+    color: var(--text-secondary);
+    font-family: var(--font-sans);
     font-size: 16px;
-    line-height: 1.75;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 
-  h1, h2, h3, h4 {
-    @apply text-neutral-100 font-semibold tracking-tight;
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary);
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.02em;
   }
 
-  a, button {
-    @apply transition-all duration-300;
+  /* Keyboard focus states */
+  *:focus-visible {
+    outline: 2px solid var(--gold-soft);
+    outline-offset: 4px;
   }
 }
 
-/* Subtle glow utilities */
-.gold-glow {
-  box-shadow: 0 0 25px rgba(212, 175, 55, 0.08);
+/* Animations */
+@keyframes signal-pulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(122, 30, 30, 0.4);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 0 0 8px 2px rgba(163, 58, 47, 0.6);
+  }
 }
 
-.gold-glow-hover:hover {
-  box-shadow: 0 0 35px rgba(212, 175, 55, 0.15);
+.animate-signal-pulse {
+  animation: signal-pulse 2.5s infinite ease-in-out;
 }
 
-/* Interactive Grid Background effect */
-.grid-bg {
-  background-size: 40px 40px;
+/* Muted glow utilities */
+.glow-gold-subtle {
+  box-shadow: 0 0 30px -5px rgba(200, 167, 93, 0.06);
+}
+
+.glow-gold-hover:hover {
+  box-shadow: 0 0 35px -5px rgba(200, 167, 93, 0.14);
+  border-color: rgba(200, 167, 93, 0.35);
+}
+
+/* Obsidian Grid Pattern */
+.grid-obsidian {
+  background-size: 50px 50px;
   background-image: 
-    linear-gradient(to right, rgba(212, 175, 55, 0.02) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(212, 175, 55, 0.02) 1px, transparent 1px);
+    linear-gradient(to right, rgba(200, 167, 93, 0.015) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(200, 167, 93, 0.015) 1px, transparent 1px);
+}
+
+/* Prefers-reduced-motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-delay: 0s !important;
+    animation-duration: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+    animation-name: none !important;
+    transform: none !important;
+  }
+}
+
+/* Screen reader skip-to-content styling */
+.skip-to-content {
+  position: absolute;
+  top: -100px;
+  left: 20px;
+  background: var(--surface);
+  color: var(--gold-soft);
+  border: 1px solid var(--gold-muted);
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.2s ease;
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.skip-to-content:focus {
+  top: 20px;
 }
